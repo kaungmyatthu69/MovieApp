@@ -1,5 +1,6 @@
 <script setup>
 
+import TrendingSection from "@/components/HomePage/TrendingSection.vue";
 </script>
 
 <template>
@@ -20,7 +21,7 @@
 
 
     </div>
-
+<TrendingSection/>
   </div>
 
 </template>
