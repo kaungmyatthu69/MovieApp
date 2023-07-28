@@ -1,11 +1,14 @@
 <template>
   <transition name="dropdown-content">
-    <div
-        v-if="active"
-        class="origin-top-right  duration-300  -z-10 absolute  mt-20 pt-8 w-36 bg-blue-400 rounded-lg border flex flex-col gap-1 items-center py-2"
-    >
-      <slot/>
-    </div>
+
+      <div
+          v-if="active"
+          class="-bottom-16 duration-300  z-20   absolute  pt-8    w-36 bg-blue-400 rounded-lg border flex flex-col gap-1 items-center py-2"
+      >
+        <slot/>
+      </div>
+
+
   </transition>
 </template>
 
@@ -20,9 +23,9 @@ const active = computed(()=>{
 <style>
 .dropdown-content-enter-active,
 .dropdown-content-leave-active {
-  transition: all  0.5s ease;
+  transition: all  0.3s ease;
 }
-.dropdown-content-enter,
+.dropdown-content-enter-from,
 .dropdown-content-leave-to {
   opacity: 0;
   transform: translateY(-5px);

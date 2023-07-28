@@ -1,11 +1,14 @@
 <script setup>
 
 import TrendingSection from "@/components/HomePage/TrendingSection.vue";
+import PopularSection from "@/components/HomePage/PopularSection.vue";
+import Layout from "@/Layout/index.vue";
 </script>
 
 <template>
-  <div class="container mx-auto ">
-    <div class=" bgImage backdrop-blur w-full  h-full bg-cover bg-center ">
+  <Layout>
+    <div >
+      <div class=" bgImage backdrop-blur w-full  h-full bg-cover bg-center ">
         <div class="text-white px-10 flex flex-col gap-10 backdrop-blur-sm md:py-40 py-20   ">
           <div class="flex flex-col gap-3">
             <h1 class=" text-6xl">Welcome.</h1>
@@ -20,9 +23,12 @@ import TrendingSection from "@/components/HomePage/TrendingSection.vue";
 
 
 
+      </div>
+      <TrendingSection/>
+      <PopularSection/>
     </div>
-<TrendingSection/>
-  </div>
+
+  </Layout>
 
 </template>
 
