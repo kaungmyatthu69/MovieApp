@@ -8,8 +8,6 @@
         <div v-for="(item,index) in props.data" :key="index">
           <AppDropdownItem  @click="selected(`${item}`)">{{item}}</AppDropdownItem>
         </div>
-
-
       </AppDropdownContent>
     </AppDropdown>
   </div>

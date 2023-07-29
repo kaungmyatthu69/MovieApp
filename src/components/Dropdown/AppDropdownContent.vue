@@ -23,12 +23,12 @@ const active = computed(()=>{
 <style>
 .dropdown-content-enter-active,
 .dropdown-content-leave-active {
-  transition: all  0.3s ease;
+  transition: all  0.5s ease;
 }
 .dropdown-content-enter-from,
 .dropdown-content-leave-to {
-  opacity: 0;
-  transform: translateY(-5px);
+  //opacity: 0;
+  transform: translateY(-15px);
 
 }
 </style>
