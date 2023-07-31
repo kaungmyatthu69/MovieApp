@@ -12,15 +12,13 @@
         <template #body>
           <accordion-dropdown :isOpenSortMenu="isOpenSortMenu">
             <template #selctedValue>
-              <div>{{ selectedValue }}</div>
+              <div @click="toggleDropdown">{{ selectedValue }}</div>
             </template>
             <template #body>
               <div v-for="(item,index) in data" :key="index" @click="selected(item)" v-if="isOpenSortMenu">
                 {{ item }}
               </div>
             </template>
-
-
           </accordion-dropdown>
         </template>
 
@@ -43,6 +41,11 @@ const isOpenSortMenu = ref(false)
 const selected = (item) => {
   selectedValue.value = item
   isOpenSortMenu.value = false
+
+}
+
+const toggleDropdown=()=>{
+  isOpenSortMenu.value=!isOpenSortMenu.value
 }
 
 </script>

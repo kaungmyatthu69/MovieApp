@@ -1,13 +1,11 @@
 <template>
-  <h1>Popular Movies</h1>
-
   <div class="flex flex-col gap-3">
+    <h1>Popular Movies</h1>
+
     <SearchCard/>
     <FiltersCard/>
+    <button class="bg-blue-400 text-white rounded-full py-2 px-3">Search</button>
   </div>
-
-
-
 
 </template>
 <script setup>

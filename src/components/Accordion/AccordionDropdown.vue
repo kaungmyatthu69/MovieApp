@@ -1,6 +1,6 @@
 <template>
   <div>
-<div class="flex justify-between items-center bg-gray-300 px-3 text-sm py-2 rounded" @click="toggleSortMenu">
+<div class="flex justify-between items-center bg-gray-300 px-3 text-sm py-2 rounded">
   <slot name="selctedValue" />
   <ChevronDownIcon class="w-5 h-5 " />
 </div>
@@ -12,9 +12,7 @@
 <script setup>
 import {ChevronDownIcon} from "@heroicons/vue/24/solid"
 
-const props = defineProps(['data','isOpenSortMenu'])
-const toggleSortMenu=()=>{
-  props.isOpenSortMenu= !props.isOpenSortMenu
-}
+const props = defineProps(['data'])
+
 
 </script>

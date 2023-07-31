@@ -17,7 +17,6 @@ export default ()=>{
         return new Promise(async (resolve ,reject)=>{
             try {
                 const response = await useFetchApi('tv/popular')
-                // console.log("this is ",response)
                 resolve(response);
             }catch (error){
                 reject (error)

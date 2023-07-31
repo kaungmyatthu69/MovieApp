@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
+    "@vueuse/core": "^10.3.0",
     "axios": "^1.4.0",
     "flowbite": "^1.7.0",
     "flowbite-vue": "^0.0.16",
