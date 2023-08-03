@@ -7,6 +7,7 @@
 
       <template #main>
           <MovieCrads :cardWithIntro="!isMedium" />
+        sdfsdfs
       </template>
     </MoviePageLayout>
 

@@ -16,7 +16,7 @@
 <script setup>
 import CarouselSection from "@/components/CarouselSection.vue";
 import Dropdown from "@/components/Dropdown/index.vue"
-import {onBeforeMount, ref} from "vue";
+import {onBeforeMount, provide, ref} from "vue";
 import useMovie from "@/composables/useMovie";
 import Carousel from "@/components/Carousel.vue";
  const {getPopularMovie} = useMovie()
@@ -30,4 +30,5 @@ onBeforeMount(async ()=>{
     console.log(error)
   }
 })
+provide('noBorder',true)
 </script>

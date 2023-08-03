@@ -7,7 +7,7 @@
       <Dropdown :data="dropdownItem" default="Today" />
     </template>
     <template #carousel>
-      <Carousel :CarouselData="movies"/>
+      <Carousel :CarouselData="movies" />
     </template>
   </carousel-section>
 
@@ -18,7 +18,7 @@ import Dropdown from "../Dropdown/index.vue"
 import Carousel from "@/components/Carousel.vue";
 import useMovie from "@/composables/useMovie";
 
-import {onBeforeMount, ref} from "vue";
+import {onBeforeMount, provide, ref} from "vue";
 import CarouselSection from "@/components/CarouselSection.vue";
 
 const dropdownItem = ['Today','This Week']
@@ -34,6 +34,6 @@ onBeforeMount(async () => {
     console.log(error)
   }
 })
-
+provide('noBorder',true);
 
 </script>

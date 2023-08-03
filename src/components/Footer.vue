@@ -1,6 +1,6 @@
 <template>
   <div class="bg-blue-400">
-    <div class="md:flex  flex-col justify-center md:gap-10 text-white    py-10">
+    <div class="md:flex   justify-center md:gap-10 text-white     py-10">
       <div v-for="(items,index) in data " :key="index"  class="my-5 md:my-0 ps-5 md:ps-0">
         <div>
           <div v-for="(item,index) in items" :key="index" class="flex flex-col ">

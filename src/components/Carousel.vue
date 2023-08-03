@@ -1,7 +1,7 @@
 <template>
   <Carousel v-bind="settings" :breakpoints="breakpoints"   >
     <Slide v-for="data in CarouselData" :key="data.id">
-      <div class="px-3">
+      <div class="px-3 py-8">
         <Card :movie="data" />
       </div>
     </Slide>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { reactive} from 'vue'
+import {inject, reactive} from 'vue'
 import { Carousel, Navigation, Slide } from 'vue3-carousel'
 
 import 'vue3-carousel/dist/carousel.css'
@@ -38,5 +38,6 @@ const breakpoints = reactive({
 })
 
 const props = defineProps(['CarouselData'])
+
 
 </script>

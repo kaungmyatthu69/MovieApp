@@ -1,8 +1,8 @@
 <template>
 
-<main>
+<main class="">
   <Navbar/>
-<drawer/>
+  <drawer/>
   <Container>
     <slot/>
   </Container>

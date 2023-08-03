@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div  v-if="isOpendrawer" class="bg-black left-0 top-0 md:hidden mt-[72px] h-screen fixed w-72  z-10 ">
+    <div  v-if="isOpendrawer" class="bg-black left-0 top-0 md:hidden mt-[72px] h-screen fixed w-72  z-50 ">
       <div>
         <ul v-for="(item,index ) in titleList" :key="index">
           <li class="text-white">{{item.title}}</li>

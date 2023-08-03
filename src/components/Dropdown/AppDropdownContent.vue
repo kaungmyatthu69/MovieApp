@@ -3,7 +3,7 @@
 
       <div
           v-if="active"
-          class="-bottom-16 duration-300  z-20   absolute  pt-8    w-36 bg-blue-400 rounded-lg border flex flex-col gap-1 items-center py-2"
+          class="-bottom-16 duration-300    absolute  pt-8 z-10   w-36 bg-blue-400 rounded-lg border flex flex-col gap-1 items-center py-2"
       >
         <slot/>
       </div>
@@ -27,8 +27,8 @@ const active = computed(()=>{
 }
 .dropdown-content-enter-from,
 .dropdown-content-leave-to {
-  //opacity: 0;
-  transform: translateY(-15px);
+  opacity: 0;
+  transform: translateY(-10px);
 
 }
 </style>
